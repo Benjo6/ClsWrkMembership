@@ -15,7 +15,7 @@ namespace ClsWrkMembership.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View(nameof(Index));
+                return LocalRedirect(nameof(Index));
             }
             
             return View(model);
